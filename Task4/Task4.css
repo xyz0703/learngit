@@ -7,7 +7,7 @@ div
     {
     font-size:62.5%；
     }
-div.e
+div.title
     {
     display: flex;
     justify-content: space-between;
@@ -19,14 +19,15 @@ div.e
     color: white;
     padding-left: 10px;
     padding-right: 10px;    }
-div.f
+div.space
     {
     background-color:#F0F0F0;
     height: 10PX;
     position:relative;
 	top:-5.5px;
     }
-div.all{
+div.centent
+    {
     height: 50px;
 	position:relative;
     top: -5px;                    
@@ -43,7 +44,7 @@ div.img{
    
    
     }
-div.xian
+div.separte
     {
 	display:inline-block;
 	position:relative;
@@ -68,7 +69,7 @@ div.xian
     border: none;
     outline:medium; 
     }
-.centent
+.placeholder
     {
     content: attr(placeholder);
     color: #A8A8A8;
