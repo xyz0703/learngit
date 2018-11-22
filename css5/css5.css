@@ -37,7 +37,7 @@ html
     {  
     content:'';
     position: absolute;
-    background-image: url(../Task501.png);
+    background-image: url(Task501.png);
     filter: blur(4px);
     width:100%;
     height:180px;
