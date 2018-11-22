@@ -172,6 +172,10 @@ html
     position: relative;
     margin-left: 110px;
     }
+.white
+    {
+    height: 50px;
+    }     
 .button
     {
     background-color: white;
