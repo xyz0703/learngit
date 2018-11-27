@@ -6,6 +6,10 @@ html
     {
     font-size: 62.5%;
     }
+main
+    {
+    margin: 6rem 0 6rem 0;
+    }    
 li
     {
     background-image: url(css6sprites.png) ;
@@ -13,63 +17,47 @@ li
     }
 .icon1
     {         
-    background-position:  -220px -10px;
-    width: 9rem; 
-    height: 8rem;
+    background-position:  -10px -10px;
+    width: 46px; 
+    height: 43px;
     transform: scale(0.7);
-    position: relative;
-    top: -1.3em;
-    left: -3.8rem;
     }
 .icon2 
     {
-    background-position: -128px -144px;
+    background-position: -140px -10px;
     display: inline-block;
-    width:4rem; 
-    height: 4rem;
+    width:24px; 
+    height: 24px;
     transform: scale(0.7);
-    position: relative;
-    top: -0.8em;
     }
 .icon3 
     {
-    background-position:-345px -10px;
+    background-position:-140px -54px;
     display: inline-block;
-    width: 4rem; 
-    height: 4rem;
+    width: 19px; 
+    height:23px;
     transform: scale(0.7);
-    position: relative;
-    left: -0.5rem;
-    top: -1.2rem;
     }
 .icon4 
     {
-    background-position: -237px -144px;
-    width: 6rem; 
-    height: 6rem;
+    background-position: -74px -10px;
+    width: 46px; 
+    height: 43px;
     transform: scale(0.7);
-    position: relative;
-    left: -0.4rem;
-    top: -1.8rem;
     }
 .icon5
     {
-    background-position:  -10px -144px;
-    width: 8rem; 
-    height: 8rem;
+    background-position:  -10px -75px;
+    width: 39px; 
+    height: 44px;
     transform: scale(0.7);
-    position: relative;
-    left: -1.4rem;
-    top: -2.5rem;
     }
-.icon6 {background-position: -10px -10px;
-    width: 11.5rem; 
-    height: 7.8rem;
+.icon6 
+    {background-position: -69px -75px;
+    width: 42px; 
+    height: 40px;
     transform: scale(0.7);
-    position: relative;
-    left: -5.4rem;
-    top: -3.5rem;
-}
+    }
 header
     {
     display: flex;
@@ -86,6 +74,8 @@ button
     {
     border: none;   
     cursor: pointer;
+    word-wrap:break-word;
+    background-color: #fff;
     }
 .button-left
     {
@@ -108,6 +98,8 @@ button
     }    
 .button-right
     {
+        display: flex;
+        justify-content: center;
         width: 5rem;
         height: 5rem;
         background-color: #5fc0cf;
@@ -127,7 +119,7 @@ button
     align-items: center;
     width: 100%;
     height: 4rem;
-    margin-top: 6rem;
+    
     }          
 select
     {    
@@ -193,54 +185,38 @@ select
     transform:rotate(45deg);
     margin-left: 0.5rem;
     }
-.space
-    {
-    width: 100%;
-    height: 6rem;    
-    }   
 footer
     {   
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height:6rem;
-        background-color:  #fff;
-        position: fixed;
-        bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height:6rem;
+    background-color:  #fff;
+    position: fixed;
+    bottom: 0%;
     }     
 .button-house
     { 
-       width: 6rem;
-       height: 6rem; 
-       font-size: 1rem;
-       margin-right: 31%;
-
+    width: 46px;
+    height: 6rem; 
+    font-size: 1rem;
+    color: #5fc0cd; 
     }
 .button-pen
     {
-       width: 6rem;
-       height: 6rem; 
-       border-radius: 6rem; 
-       background-color:  #5fc0cd;
-       position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem; 
+    border-radius: 6rem; 
+    background-color:  #5fc0cd;
     }
 .button-man
     {  
-     width: 6rem;
-     height: 6rem; 
-     margin-left: 31%;
-    }
-.font-house
-    {
-    position: relative;
-    top:-2.2rem;
-    font-size: 1.3rem;
-    color: #5fc0cd;    
-    }  
-.font-man
-    {
-    position: relative;
-    top:-4rem;
+    width: 42px;
+    height: 6rem; 
     color: #a9a9a9;
-    }    
+    }
+
+
