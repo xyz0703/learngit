@@ -1,0 +1,246 @@
+*   {
+    padding: 0;
+    margin: 0;
+    }
+html
+    {
+    font-size: 62.5%;
+    }
+li
+    {
+    background-image: url(css6sprites.png) ;
+    list-style-type:none
+    }
+.icon1
+    {         
+    background-position:  -220px -10px;
+    width: 9rem; 
+    height: 8rem;
+    transform: scale(0.7);
+    position: relative;
+    top: -1.3em;
+    left: -3.8rem;
+    }
+.icon2 
+    {
+    background-position: -128px -144px;
+    display: inline-block;
+    width:4rem; 
+    height: 4rem;
+    transform: scale(0.7);
+    position: relative;
+    top: -0.8em;
+    }
+.icon3 
+    {
+    background-position:-345px -10px;
+    display: inline-block;
+    width: 4rem; 
+    height: 4rem;
+    transform: scale(0.7);
+    position: relative;
+    left: -0.5rem;
+    top: -1.2rem;
+    }
+.icon4 
+    {
+    background-position: -237px -144px;
+    width: 6rem; 
+    height: 6rem;
+    transform: scale(0.7);
+    position: relative;
+    left: -0.4rem;
+    top: -1.8rem;
+    }
+.icon5
+    {
+    background-position:  -10px -144px;
+    width: 8rem; 
+    height: 8rem;
+    transform: scale(0.7);
+    position: relative;
+    left: -1.4rem;
+    top: -2.5rem;
+    }
+.icon6 {background-position: -10px -10px;
+    width: 11.5rem; 
+    height: 7.8rem;
+    transform: scale(0.7);
+    position: relative;
+    left: -5.4rem;
+    top: -3.5rem;
+}
+header
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:6rem;
+    background-color:  #5fc0cd;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+    }
+button
+    {
+    border: none;   
+    cursor: pointer;
+    }
+.button-left
+    {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 0.5em;
+    background-color: #4682b4;
+    margin-right: -0.6rem;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: -2rem; 
+    }    
+.button-center
+    {
+
+    background-color: #fff;
+    margin-left: -0.6rem;
+    vertical-align: middle;
+    color: #5fc0cf;
+    }    
+.button-right
+    {
+        width: 5rem;
+        height: 5rem;
+        background-color: #5fc0cf;
+        position: fixed;
+        right: 0.5em;
+    }    
+.location
+    { 
+    position: relative;
+    right: -8rem;
+    width: 4rem;
+    height: 4rem;
+    }  
+.select
+    {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin-top: 6rem;
+    }          
+select
+    {    
+    width: 33%;
+    height: 4rem;   
+    border: none;
+    text-align-last:center;
+    outline:medium; 
+    font-size: 1.5rem;
+    color: #a9a9a9;
+    cursor: pointer;
+    border-right: 0.2rem solid;
+    border-image:-webkit-linear-gradient(top, #fff 15%, #c0c0c0 50%, #fff 85%) 5; 
+    }
+.select-right
+    {
+        border-right: 0;
+    }    
+.centent
+    {
+    width:100%;
+    height: 9rem;
+    border-top: 0.1rem solid #c0c0c0; 
+    padding: 1rem 0 1rem 0;
+    } 
+.centent-gray  
+    {  
+        display: flex;
+        height: 3rem;
+        font-size: 1.4rem;
+        color: #a9a9a9;
+        white-space: nowrap;
+        line-height: 3rem;
+    }
+.centent-center   
+    { 
+    justify-content: space-between;
+    } 
+.centent-black
+    {   
+    display: inline-block;
+    overflow:hidden; 
+    white-space:nowrap;
+    text-overflow:ellipsis; 
+        color: black;
+        margin-left: 4rem;
+    }
+.centent-red
+    {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: red;
+    margin-right: 1rem;
+    
+    }    
+    .centent-blue
+    {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-right: 0.2rem solid #5fc0cd;
+    border-top: 0.2rem solid #5fc0cd;
+    transform:rotate(45deg);
+    margin-left: 0.5rem;
+    }
+.space
+    {
+    width: 100%;
+    height: 6rem;    
+    }   
+footer
+    {   
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height:6rem;
+        background-color:  #fff;
+        position: fixed;
+        bottom: 0%;
+    }     
+.button-house
+    { 
+       width: 6rem;
+       height: 6rem; 
+       font-size: 1rem;
+       margin-right: 31%;
+
+    }
+.button-pen
+    {
+       width: 6rem;
+       height: 6rem; 
+       border-radius: 6rem; 
+       background-color:  #5fc0cd;
+       position: fixed;
+    }
+.button-man
+    {  
+       width: 6rem;
+       height: 6rem; 
+       margin-left: 31%;
+    }
+.font-house
+    {
+    position: relative;
+    top:-2.2rem;
+    font-size: 1.3rem;
+    color: #5fc0cd;    
+    }  
+.font-man
+    {
+    position: relative;
+    top:-4rem;
+    color: #a9a9a9;
+    }    
