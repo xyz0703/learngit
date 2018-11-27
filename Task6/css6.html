@@ -1,224 +1,158 @@
-*   {
-    padding: 0;
-    margin: 0;
-    }
-html
-    {
-    font-size: 62.5%;
-    }
-main
-    {
-    margin: 6rem 0 6rem 0;
-    }    
-li
-    {
-    background-image: url(css6sprites.png) ;
-    list-style-type:none
-    }
-.icon1
-    {         
-    background-position:  -10px -10px;
-    width: 46px; 
-    height: 43px;
-    transform: scale(0.7);
-    }
-.icon2 
-    {
-    background-position: -140px -10px;
-    display: inline-block;
-    width: 30px; 
-    height: 24px;
-    transform: scale(0.7);
-    }
-.icon3 
-    {
-    background-position:-140px -54px;
-    display: inline-block;
-    width: 27px; 
-    height:23px;
-    transform: scale(0.7);
-    }
-.icon4 
-    {
-    background-position: -74px -10px;
-    width: 46px; 
-    height: 43px;
-    transform: scale(0.7);
-    }
-.icon5
-    {
-    background-position:  -10px -75px;
-    width: 39px; 
-    height: 44px;
-    transform: scale(0.7);
-    }
-.icon6 
-    {background-position: -69px -75px;
-    width: 42px; 
-    height: 40px;
-    transform: scale(0.7);
-    }
-header
-    {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height:6rem;
-    background-color:  #5fc0cd;
-    position: fixed;
-    top: 0%;
-    z-index: 999;
-    }
-button
-    {
-    border: none;   
-    cursor: pointer;
-    word-wrap:break-word;
-    background-color: #fff;
-    }
-.button-left
-    {
-    width: 10rem;
-    height: 5rem;
-    border-radius: 0.5em;
-    background-color: #4682b4;
-    margin-right: -0.6rem;
-    font-size: 2rem;
-    color: #fff;
-    margin-left: -2rem; 
-    }    
-.button-center
-    {
-
-    background-color: #fff;
-    margin-left: -0.6rem;
-    vertical-align: middle;
-    color: #5fc0cf;
-    }    
-.button-right
-    {
-        display: flex;
-        justify-content: center;
-        width: 5rem;
-        height: 5rem;
-        background-color: #5fc0cf;
-        position: fixed;
-        right: 0.5em;
-    }    
-.location
-    { 
-    position: relative;
-    right: -8rem;
-    width: 4rem;
-    height: 4rem;
-    }  
-.select
-    {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 4rem;
-    
-    }          
-select
-    {    
-    width: 33%;
-    height: 4rem;   
-    border: none;
-    text-align-last:center;
-    outline:medium; 
-    font-size: 1.5rem;
-    color: #a9a9a9;
-    cursor: pointer;
-    border-right: 0.2rem solid;
-    border-image:-webkit-linear-gradient(top, #fff 15%, #c0c0c0 50%, #fff 85%) 5; 
-    }
-.select-right
-    {
-        border-right: 0;
-    }    
-.centent
-    {
-    align-items: center;
-    width:100%;
-    height: 9rem;
-    border-top: 0.1rem solid #c0c0c0; 
-    padding: 1rem 0 1rem 0;
-    } 
-.centent-gray  
-    {  
-        display: flex;
-        height: 3rem;
-        font-size: 1.4rem;
-        color: #a9a9a9;
-        white-space: nowrap;
-        line-height: 2.5rem;
-        padding-left: 5px;
-    }
-.centent-center   
-    { 
-    justify-content: space-between;
-    } 
-.centent-black
-    {   
-    display: inline-block;
-    overflow:hidden; 
-    white-space:nowrap;
-    text-overflow:ellipsis; 
-        color: black;
-        margin-left: 2.8rem;
-    }
-.centent-red
-    {
-    display: inline-block;
-    font-size: 1.6rem;
-    color: red;
-    margin-right: 1rem;
-    
-    }    
-    .centent-blue
-    {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    border-right: 0.2rem solid #5fc0cd;
-    border-top: 0.2rem solid #5fc0cd;
-    transform:rotate(45deg);
-    margin-left: 0.5rem;
-    }
-footer
-    {   
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height:6rem;
-    background-color:  #fff;
-    position: fixed;
-    bottom: 0%;
-    }     
-.button-house
-    { 
-    width: 46px;
-    height: 6rem; 
-    font-size: 1rem;
-    color: #5fc0cd; 
-    }
-.button-pen
-    {
-    display: flex;
-    justify-content: center;
-    width: 6rem;
-    height: 6rem; 
-    border-radius: 6rem; 
-    background-color:  #5fc0cd;
-    }
-.button-man
-    {  
-    width: 42px;
-    height: 6rem; 
-    color: #a9a9a9;
-    }
-
-
+<html>
+<head>
+<link href="css6.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>css6</title>
+</head>
+<body>
+<header>               
+<button class="button-left">找雇主</button>
+<button class="button-left button-center">找护工</button>
+<button class="button-right">
+<li class="icon1"></li>
+</button>
+</header>  
+<main>
+<div class="select">
+<select>
+<option value="1">所在地</option>
+<option value="2">成都</option>
+<option value="3">兰州</option>
+</span>
+</select>
+<select>
+<option>食宿</option>
+<option>包</option>
+<option>不包</option>
+</select>
+<select class="select-right">
+<option value="1">病人情况</option>
+<option value="2">健康</option>
+<option value="3">不健康</option>
+</select>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+<div class="centent">
+<div class="centent-gray">   
+<li class="icon2"></li>
+<span>服务日期</span>
+</div>
+<div class="centent-gray centent-center">
+<div class="centent-gray centent-black">
+<span>2015-7-5至2015-7-12</span>
+</div>
+<div class="centent-gray centent-red">
+<span>25元每小时<div class="centent-blue"></div></span>
+</div>
+</div>
+<div class="centent-gray">    
+<li class="icon3"></li>
+<span>北京.通州.果园</span>
+</div>
+</div>
+</main>
+<footer>
+<button class="button-house">
+<li class="icon4"></li>
+<span>首页</span>       
+</button>
+<button class="button-pen">
+<li class="icon5"></li>
+</button>
+<button class="button-house button-man">
+<li class="icon6"></li>
+<div>我的</div> 
+</button>        
+</footer>
+</body>
+</html>
