@@ -61,7 +61,7 @@ main
     transform:rotate(45deg);
     border-right: 0.3rem solid #b0b0b0 ;
     border-top: 0.3rem solid #b0b0b0;
-    position: fixed;
+    position: absolute;
     right: 8%;
     }
 .top-second
