@@ -171,6 +171,7 @@ button
     outline: none;
     background-color: #f08080;
     border-radius: 1rem;
+    white-space: nowrap;
     }
 .butoon-left
     {
