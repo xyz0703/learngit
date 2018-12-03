@@ -166,10 +166,11 @@ button
     {
     border: none;
     width: 40%;
-    height: 6rem;
+    height: 5.5rem;
     cursor: pointer;
     outline: none;
     background-color: #f08080;
+    border-radius: 1rem;
     }
 .butoon-left
     {
