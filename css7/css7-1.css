@@ -1,0 +1,131 @@
+*   {
+    padding: 0;
+    margin: 0;
+    }
+html
+    {
+    font-size: 62.5%;
+    background-color: #e8e8e8;
+    }
+header
+    {
+    width: 100%;
+    height: 4.75rem;
+    background-color:  #5fc0cd;
+    position: fixed;
+    top: 0%;
+    }
+.menu
+    {
+    width: 2rem;
+    height: 0.25rem;
+    border-top: 0.25rem solid #fff;
+    border-bottom: 0.25rem solid #fff;
+    background-clip:content-box;
+    background-color: #fff;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 1.5rem 0 0 4%;
+    }
+.display
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    } 
+.font
+    {
+    font-size: 2rem;
+    color: #909090;
+    letter-spacing: 0.2rem;
+    white-space:nowrap;
+    }           
+main
+    {
+    margin-top: 4.75rem;
+    } 
+.top-first
+    {
+    flex-direction: row;
+    width: 88%;
+    height: 7rem;
+    border: 0.1rem solid #b0b0b0;
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: #fff;
+    }
+.gray
+    {
+    width: 1.3rem;
+    height: 1.3rem;
+    transform:rotate(45deg);
+    border-right: 0.3rem solid #b0b0b0 ;
+    border-top: 0.3rem solid #b0b0b0;
+    position: fixed;
+    right: 8%;
+    }
+.top-second
+    {
+    justify-content: start;
+    width: 88%;
+    height: 45.5rem; 
+    background-color: #fff; 
+    border: 0.1rem solid #b0b0b0; 
+    flex-wrap: wrap;
+    position: relative;
+    }
+.top-third
+    {
+    width: 88%;
+    height: 5rem;
+    border-bottom: 0.1rem solid orange;   
+    color: orange; 
+    }    
+button
+    {
+    width: 72%;
+    height:  7rem;
+    background-color: #5fc0cd;
+    margin: 1.5rem 0 1.5rem 0;
+    border: none;   
+    cursor: pointer;
+    outline: none;
+    }  
+.font-button
+    {
+    color: #fff;
+    }
+.font-small
+    {
+    font-size:1.5rem;  
+    }
+.triangle
+    {  
+    width:0;
+    height:0;
+    border-width: 2rem  0 2rem 2rem;
+    border-style:solid;
+    border-color:transparent transparent transparent orange;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    }    
+.bottom
+    {
+    flex-direction: row;
+    width: 6rem;
+    }    
+.button-blue
+    {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    }
+.button-gray
+    {
+    background-color: #e8e8e8;
+    }  
+a
+    {
+    text-decoration:none
+    }      
+
