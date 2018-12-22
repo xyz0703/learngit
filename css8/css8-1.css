@@ -156,10 +156,15 @@ a:hover {
 .carousel-indicators
 .active
     {
-    width: 2vw;
-    height: 2vw;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     }
+.carousel-indicators li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+}
 .carousel-indicators
 
     {
@@ -199,6 +204,13 @@ a:hover {
     background-position: -720px -715px;
     width: 52px; 
     height: 55px;
+    }
+@media screen and (max-width: 767px)
+    {
+.icon9
+    {
+    display: none;
+    }
     }
 .row-5
     {
@@ -253,6 +265,19 @@ a:hover {
     width: 10rem;
     margin: 1rem 0 0 1rem;
     }
+.flex-learn
+    {
+    height: 10rem;
+    justify-content: flex-start;
+    }
+@media screen and (max-width: 767px)
+    {
+.flex-learn
+    {
+    height: 10rem;
+    justify-content: center;
+    }
+    }
 .flex
     {
     flex-direction: column;
@@ -261,11 +286,7 @@ a:hover {
     {
     height: 20rem;
     }
-.flex-learn
-    {
-    height: 10rem;
-    justify-content: flex-start;
-    }
+
 .flex-top
     {
     margin-top: 2rem;
@@ -424,7 +445,13 @@ footer
     }
 .on 
     {
+    width: 5.4rem;
+    height: 1.5rem;
     margin-top: 1rem; 
+    }
+.on:hover
+    {
+    border-bottom: 0.1rem solid #009966;
     }
 .icon19
     {
@@ -435,6 +462,15 @@ footer
     position: relative;
     left: -1.1rem;
     top: -1.5rem;
+    }
+.down
+    {
+    width: 5.5rem;
+    height: 1.8rem;
+    }
+.down:hover
+    {
+    border-bottom: 0.1rem solid white;
     }
 .img 
     {
