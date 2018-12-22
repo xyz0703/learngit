@@ -433,7 +433,7 @@ footer
     background-position:  -522px -848px;
     transform: scale(0.7);
     position: relative;
-    left: -1.7rem;
+    left: -1.1rem;
     top: -1.5rem;
     }
 .img 
@@ -442,7 +442,6 @@ footer
     position: absolute;
     top: 0.7vw;
     right: 15vw;
-    width: 6rem;
     }
 .face
     {
@@ -526,7 +525,6 @@ i
     display: none;
     }
     }
-@media screen and (min-width: 750px)
 
   
 
