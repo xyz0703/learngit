@@ -389,6 +389,10 @@ div>input:checked+label::after{
     margin: 0.5rem 1.7rem 2.7rem 0; 
     }
     }
+.size-margin
+    {
+    margin-bottom: 2rem;
+    }
 .size-row
     {
     width: 100%;
