@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eff0f4;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #5fc0cd;
+  color: #fff;
+}
+
+.center {
+  font-size: 1.8rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #5fc0cd;
+  width: 100%;
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .left {
+  margin-left: 1.45rem;
+}
+
+header .right {
+  margin-right: 1.45rem;
+}
+
+main .centent {
+  background-color: #fff;
+  margin-top: 0.65rem;
+  height: 5.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+main .centent .logo {
+  width: 5.8rem;
+  height: 2.75rem;
+  border-right: 0.1rem solid #eaedee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .centent .logo img {
+  transform: scale(0.6);
+}
+
+main .centent .import {
+  width: 86%;
+  margin-left: 1.55rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: medium;
+}
+
+footer {
+  margin-top: 3.5rem;
+}
+
+footer .blue {
+  background-color: #5fc0cd;
+  width: 100%;
+  height: 4.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .forget {
+  position: fixed;
+  right: 3%;
+  color: #5fc0cd;
+  border: none;
+}
