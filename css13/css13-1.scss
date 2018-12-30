@@ -123,7 +123,7 @@ a.font-blue{
 }
 .padding {
     width: 100vw;
-    position: fixed;
+    @include fixed;
 }
 header.name {
     @include display;
