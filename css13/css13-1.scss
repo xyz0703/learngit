@@ -121,6 +121,10 @@ a.font-blue{
     transform: scale(0);
     opacity: 0;
 }
+.padding {
+    width: 100vw;
+    position: fixed;
+}
 header.name {
     @include display;
     justify-content: flex-start;
