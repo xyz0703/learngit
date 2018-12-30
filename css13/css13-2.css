@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.font-gray {
+  color: #9a9a9a;
+}
+
+a.name {
+  text-decoration: none;
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+button.name {
+  outline: none;
+  border: none;
+  letter-spacing: 0.3rem;
+}
+
+img.name {
+  transform: scale(0.5);
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #29bde0;
+  letter-spacing: 0.2rem;
+}
+
+header.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  flex-direction: column;
+  top: 0%;
+  width: 100%;
+  background-color: #29bde0;
+}
+
+header.name .start {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 3.6rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+header.name .start .menu {
+  width: 1.2rem;
+  height: 0.2rem;
+  border-top: 0.15rem solid #fff;
+  border-bottom: 0.15rem solid #fff;
+  background-clip: content-box;
+  background-color: #fff;
+  padding: 0.4rem 0 0.4rem 0;
+  outline: 0.19rem solid #fff;
+  outline-offset: 0.28rem;
+  margin-left: 1.5rem;
+}
+
+header.name .start .off {
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: 15px solid #fff;
+  outline-offset: -3.15rem;
+  transform: rotate(45deg);
+  margin-right: 1rem;
+}
+
+header.name .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #b9e9f5;
+  width: 100%;
+  height: 4.25rem;
+}
+
+header.name .center:before, header.name .center .tag:after {
+  content: "";
+  display: block;
+  border-width: 0.5rem;
+  position: absolute;
+  bottom: 2.85rem;
+  left: 3.6rem;
+  border-style: solid dashed dashed;
+  border-color: #b9e9f5 transparent transparent;
+}
+
+header.name .center .font-center {
+  font-size: 1.3rem;
+  margin-left: 2.5rem;
+}
+
+header.name .center .music-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  float: right;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: #fbb435;
+  right: 4.5%;
+  position: relative;
+  right: 1.3rem;
+}
+
+header.name .center .music-round .music-star {
+  border-width: 0.9rem  0 0.9rem 1.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: relative;
+  right: -1rem;
+}
+
+header.name .center audio.name {
+  float: right;
+  height: 4.25rem;
+  transform: rotate(180deg);
+  opacity: 0;
+  position: absolute;
+  top: 3.2rem;
+  right: 0%;
+}
+
+header.name .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  height: 3.8rem;
+}
+
+header.name .end .font-end {
+  margin-left: 3.4rem;
+}
+
+main.name {
+  margin: 11.65rem 0 0 0;
+  width: 100%;
+}
+
+main.name .player {
+  float: left;
+  width: 22.5vw;
+  height: 22.5vw;
+  background-color: #fff;
+  margin: 4.4vw 5.2vw 5.2vw 5.4vw;
+}
+
+main.name .player .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  height: 75%;
+  background-color: #f5c97b;
+  font-size: 4.8vw;
+  margin: 0.8vw 0.8vw 0 0.8vw;
+}
+
+main.name .player .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18%;
+  background-color: #83b09a;
+  font-size: 3.5vw;
+  color: #fff;
+  margin: 0 0.8vw 0.8vw 0.8vw;
+}
+
+main.name .player:hover .hover {
+  display: block;
+}
+
+main.name .player .hover {
+  display: inline-block;
+  display: none;
+}
+
+main.name .player .hover .logo {
+  float: left;
+  width: 4.5vw;
+  height: 4.5vw;
+  background-color: #fff;
+  margin-top: 2.5vw;
+  margin-left: 1.45vw;
+}
+
+main.name .player .hover .margin {
+  margin-left: 0;
+}
+
+main.name .space {
+  margin-bottom: 10.1rem;
+}
+
+footer.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 999;
+  bottom: 0%;
+  width: 100%;
+  padding: 2.1rem 0 3.5rem 0;
+  background-color: #29bde0;
+}
+
+footer.name .down {
+  height: 4.5rem;
+  width: 24.5rem;
+  background-color: #fbb435;
+  color: #fff;
+  font-size: 2rem;
+}

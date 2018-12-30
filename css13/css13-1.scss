@@ -1,0 +1,222 @@
+* {
+	padding: 0;
+	margin: 0;
+    }
+html {
+    font-size: 62.5%;
+    }
+$white: #fff;
+$blue: #5fc0cd;
+$gray: #f0f0f0;
+.font-gray {
+    color: #9a9a9a;
+}
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin fixed {
+    position: fixed;
+    z-index: 999;
+} 
+a.name{
+    font-size: 1.604rem;
+    text-decoration:none;
+    color: $white; 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+button.name{
+    outline: none;
+    border: none;
+    background-color: $blue;
+} 
+body{
+        background-color: $gray;
+} 
+#sidemenu{
+    display: none;
+    &:checked + aside {
+    /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+        left: 0;
+    /*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+    }
+    &:checked ~ #wrap {
+    /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+        padding-left: 40%;
+    }
+} 
+aside {
+    /*侧边栏,初始位置为-200px，即隐藏效果*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -40.8%;
+    width:40%;
+    background: #fff;
+    border-right: 0.2rem solid #5fc0cd; 
+    transition: 0.2s ease-out;
+    /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+}
+  /*控制侧边栏进出的按钮（外部包裹）*/
+#wrap {
+    transition: 0.2s ease-out;
+}
+  /*控制侧边栏进出的按钮（内部文字样式）*/
+label {
+    /*控制侧边栏进出的按钮*/
+    width: 2rem;
+    height: 0.25rem;
+    border-top: 0.25rem solid #fff;
+    border-bottom: 0.25rem solid #fff;
+    background-clip: content-box;
+    background-color: #fff;
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 1.1rem;
+  }
+li {
+    @include display;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    height: 2.8em;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 0.1rem solid #c0c0c0;
+}
+.box {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-right: 0.2rem solid #5fc0cd;
+    border-top: 0.2rem solid #5fc0cd;
+    transform:rotate(45deg);
+    position: absolute;
+    right: 2.5rem;
+    }
+img.name{
+    transform: scale(0.5); 
+}
+a.font-blue{
+    color:#5fc0cd;
+}
+.sidenav li:nth-child(3) i {
+    transition-delay: .32s;
+}
+.five:hover i {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidenav a i {
+    display: block;
+    float: left;
+    font-size: 16px;
+    line-height: 48px;
+    width: 50px;
+    text-align: center;
+}
+.five i {
+    transform: scale(0);
+    opacity: 0;
+}
+header.name {
+    @include display;
+    justify-content: flex-start;
+    @include fixed;
+    top: 0%;
+    background-color: $blue;
+    width: 100%;
+    height: 3.5rem;
+    .menu {
+        width: 2rem;
+        height: 0.25rem;
+        border-top: 0.25rem solid #fff;
+        border-bottom: 0.25rem solid #fff;
+        background-clip:content-box;
+        background-color: #fff;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-left: 1.1rem;
+    } 
+}
+main.name {   
+    padding: 0 1.85rem; 
+    flex-direction: column;
+    .start {
+        @include display;
+        height: 5.75rem;
+        background-color: $white;
+        font-size: 1.742rem;
+        color: #9a9a9a;
+        position: relative;
+        margin: 4.9rem 0 1.4rem 0;
+        border: 0.05rem solid #d0d0d0;
+        .right {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border-right: 0.2rem solid #e7e7e7;
+            border-top: 0.2rem solid #e7e7e7;
+            transform:rotate(45deg);
+            position: absolute;
+            right: 0.75rem;
+            }
+        }
+    .end {
+        flex-direction: column;
+        background-color: $white;
+        border: 0.05rem solid #d0d0d0;
+        position: relative;
+        .top {
+            @include display;
+            height: 4.5rem;
+            color: #fbb435;
+            border-bottom: 0.05rem solid #fbb435;
+            font-size: 1.887rem;
+            margin-bottom: 1.5rem; 
+        }
+        .bottom {
+            padding: 0 2.65rem;
+            .on {
+                @include display;
+                height: 6.65rem;
+                background-color: $blue;
+            }
+            .down{
+                @include display;
+                font-size: 1.2265rem;
+                color: #787878;
+                margin: 1.3rem 0;;
+            }
+        }
+        .round{
+            @include display;
+            flex-direction: row;
+            margin-bottom: 0.45rem;
+            .blue{
+                width: 0.85rem;
+                height: 0.85rem;
+                border-radius: 50%;
+                background-color: $blue;
+            }
+            .gray{
+                width: 0.85rem;
+                height: 0.85rem;
+                border-radius: 50%;
+                margin-left: 0.4rem; 
+                background-color: $gray;
+            }
+        }
+        .triangle{  
+            border-width: 1.4rem  0 1.6rem 1.4rem;
+            border-style:solid;
+            border-color:transparent transparent transparent orange;
+            position: absolute;
+            right: 0.5rem;
+            top: 48%;
+            background-color: $white;
+        }
+    }
+}
+    
