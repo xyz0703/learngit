@@ -81,8 +81,9 @@ main.name {
         }
         .next {
             padding: 2.6rem 0 1.25rem 0;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: $white;
+            white-space: nowrap;
         }
     }
     .down {
