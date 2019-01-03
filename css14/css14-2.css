@@ -1,0 +1,399 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.font-gray {
+  color: #999999;
+}
+
+.font-eighteen {
+  font-size: 1.8rem;
+}
+
+.font-sixteen {
+  font-size: 1.6rem;
+}
+
+.font-green {
+  color: #29b078;
+}
+
+li.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+i.name {
+  background-image: url(css14-1sprites.png);
+}
+
+i.second {
+  background-image: url(css14-2sprites.png);
+}
+
+.icon1 {
+  display: inline-block;
+  background-position: -1314px -630px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon2 {
+  display: inline-block;
+  background-position: -1242px -630px;
+  width: 16px;
+  height: 14px;
+}
+
+.icon3 {
+  background-position: -1278px -630px;
+  width: 16px;
+  display: inline-block;
+  height: 14px;
+}
+
+.icon4 {
+  width: 112px;
+  height: 55px;
+  background-position: -164px -278px;
+}
+
+.icon5 {
+  width: 100%;
+  height: 21vw;
+  background-position: -16vw -2vw;
+  background-size: 133vw 36.5vw;
+  display: inline-block;
+}
+
+.icon6 {
+  width: 122px;
+  height: 122px;
+  background-position: -10px -278px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1025px) {
+  .phone {
+    display: none;
+  }
+  .work {
+    width: 28%;
+  }
+  .potato {
+    width: 65%;
+  }
+  .bottom-left {
+    display: inline-block;
+    width: 30%;
+  }
+  .bottom-center {
+    display: inline-block;
+    width: 10%;
+  }
+  .end {
+    margin-left: 24.3%;
+  }
+  .potato-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2.6rem 6.3rem 3.3rem 6.3rem;
+  }
+  .photo-logo {
+    width: 80%;
+  }
+  p.margin {
+    padding: 0 6.3rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .computer {
+    display: none;
+  }
+  .work {
+    width: 100%;
+  }
+  .potato {
+    width: 100%;
+  }
+  .bottom-left {
+    width: 60%;
+  }
+  .bottom-center {
+    width: 60%;
+  }
+  .end {
+    margin-left: 0%;
+  }
+  .potato-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.6rem 2.3rem 3.3rem 2.3rem;
+  }
+  p.margin {
+    padding: 0 2.3rem;
+  }
+}
+
+header.name {
+  font-size: 1.4rem;
+}
+
+header.name .white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 3.8rem;
+  padding: 0 10%;
+}
+
+header.name .left {
+  color: #29b078;
+}
+
+header.name div .round {
+  line-height: 3.8rem;
+  text-align: center;
+  font-size: 0;
+  display: inline-block;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  margin-left: 1.7rem;
+  border: 0.1rem solid #29b078;
+}
+
+header.name .green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #29b078;
+  font-size: 1.602rem;
+  height: 9.8rem;
+  padding: 0 10%;
+}
+
+header.name .green .green-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+header.name .green .green-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+header.name .green .green-right .border-bottom {
+  display: inline-block;
+  height: 9.5rem;
+  text-align-last: center;
+  line-height: 10rem;
+  width: 10.2rem;
+  position: relative;
+  left: 3.8rem;
+}
+
+header.name .green .green-right .border-bottom:hover {
+  border-bottom: 0.4rem solid #fefefe;
+}
+
+#sidemenu {
+  display: none;
+}
+
+#sidemenu:checked + aside {
+  top: 13.6rem;
+}
+
+#sidemenu:checked ~ #wrap {
+  padding-top: 12rem;
+}
+
+aside {
+  position: absolute;
+  top: -14.5rem;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 12rem;
+  background: #29b078;
+  margin-bottom: 12rem;
+}
+
+label {
+  position: relative;
+  left: 50%;
+}
+
+label .menu {
+  width: 2rem;
+  height: 0.25rem;
+  border-top: 0.25rem solid #333;
+  border-bottom: 0.25rem solid #333;
+  background-clip: content-box;
+  background-color: #333;
+  padding: 0.5rem 0 0.5rem 0;
+  position: relative;
+  left: -168%;
+}
+
+main.name {
+  padding: 0 10%;
+  margin-bottom: 23.2rem;
+}
+
+main.name .row-home {
+  height: 7.5rem;
+  padding: 0 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+main.name .row-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main.name .row-work .work {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.1rem #c0c0c0;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+main.name .row-work .work .work-border {
+  border-bottom: 0.1rem solid #c0c0c0;
+  width: 100%;
+  height: 6.2rem;
+  margin-bottom: 3.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.name .row-work .work a.name {
+  color: #009966;
+  line-height: 4.4rem;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+
+main.name .row-work .work a.name::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border: 0.1rem solid #ff650e;
+  border-radius: 50%;
+}
+
+main.name .row-work .work a.name:hover {
+  color: #ff650e;
+  text-decoration: none;
+}
+
+main.name .row-work .work a.name:hover::before {
+  background-color: #f9a372;
+  text-decoration: none;
+}
+
+main.name .row-work .potato {
+  padding-bottom: 18.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 0.1rem #c0c0c0;
+}
+
+main.name .row-work .potato .potato-border {
+  border-bottom: 0.1rem solid #c0c0c0;
+  margin-bottom: 3.7rem;
+}
+
+main.name .row-work .potato p.margin {
+  margin-top: 3.5rem;
+}
+
+footer.name {
+  font-size: 1.4rem;
+}
+
+footer.name .row-footer {
+  background-color: #29b078;
+  position: relative;
+}
+
+footer.name .row-footer .row-bottom {
+  padding: 0 10%;
+  padding-top: 3.4rem;
+}
+
+footer.name .row-footer .row-bottom .bottom-center .border-white {
+  width: 7rem;
+}
+
+footer.name .row-footer .row-bottom .bottom-center .border-white:hover {
+  border-bottom: 0.1rem solid #fff;
+}
+
+footer.name .row-footer .padding-star {
+  padding-top: 3rem;
+}
+
+footer.name .row-footer .padding-center {
+  padding-top: 1.8rem;
+  padding-bottom: 3.4rem;
+}
+
+footer.name .row-footer .row-end {
+  padding: 0 10%;
+  padding-bottom: 0.5rem;
+  border-top: 0.1rem solid #32c086;
+}
+
+footer.name .row-footer .wechat {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.8vw;
+  right: 12vw;
+}
