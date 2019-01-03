@@ -198,17 +198,24 @@ aside {
 label {
     position: relative;
     left: 50%;
+    .menu-white {
+        @include display;
+        width: 5rem;
+        height: 5rem;
+        background: #47d197;
+        border-radius: 0.6rem;
+        position: relative;
+        left: -65%;
+    }
     .menu {
         width: 2rem;
         height: 0.25rem;
-        border-top: 0.25rem solid #333;
-        border-bottom: 0.25rem solid #333;
+        border-top: 0.25rem solid #999999;
+        border-bottom: 0.25rem solid #999999;
         background-clip:content-box;
-        background-color: #333;
+        background-color: #999999;
         padding: 0.5rem 0 0.5rem 0;
-        position: relative;
-        left: -168%;
-    } 
+    }   
 }         
 main.name {
     padding: 0 10%;
