@@ -1,0 +1,22 @@
+.square {
+	float:left;
+	background-color: #FFA600;
+    width:30.5%;
+    padding-bottom: 30.5%;
+    margin: 1.4%;
+    border-radius: 8%;
+    } 
+button.name {
+    width: 100%;
+    height: 20vw;
+    font-size: 6vw;
+    border-radius: 6%;
+    margin: 1.4% 0 1.4% 0;
+    background-color: #fff;
+    color: #FFA600;
+    border: 0.2vw solid #FFA600;
+}
+button.name:hover {
+    background-color: #FFA600;
+    color: #fff;
+}
