@@ -1,10 +1,10 @@
-var div=document.getElementsByTagName('div');
+    var div=document.getElementsByTagName('div');
 var colors=['red','plum','blue','green','yellow','cyan','black','pink','gray','brown'];
 btnone.onclick=function() {//点击开始
     c=setInterval(function() {//使用定时器
         start();//调用函数
     }
-    ,500)//设置时间
+    ,1000);//设置时间
 }
     btntwo.onclick=function() {//停止按钮的
         for(i=0;i<div.length;i++) {//循环
