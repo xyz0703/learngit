@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+    }
+html {
+    font-size: 62.5%;
+    }
+$blue: #29bde0;
+$white: #fff;
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin fixed {
+    position: fixed;
+    z-index: 999;
+} 
+a.name {
+    text-decoration:none;
+    color: $white; 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+button.name {
+    outline: none;
+    border: none;
+    letter-spacing: 0.3rem;
+    height: 4.1rem;
+    width: 13.5rem;
+    border-radius: 1rem;
+} 
+img.name {
+    transform: scale(0.5); 
+}
+p.name{
+    margin-top: 1rem; 
+}
+.font-gray{
+    font-size: 1.3rem;
+    color: #a6a6a6;
+}
+.font-small{
+    font-size: 1rem;
+    color: #ebebeb;
+}
+header.name {
+    width: 100%;
+    height: 4.35rem;
+    @include display;
+    justify-content: space-between;
+    @include fixed;
+    top: 0%;
+    background-color: $blue;
+    border-bottom: 0.05rem solid #74d4eb;
+    .left {
+        margin-left: 1.05rem;
+    }
+    .center{
+        margin-top: 0.5rem;
+        font-size: 1.7rem;
+        color: $white;
+    }
+    .right {
+        margin-right: 0.9rem
+    }
+}
+main.name {
+    margin: 4.35rem 0 6.5rem 0;
+    width: 100%;
+    .on {
+        background-color: $blue;
+        padding: 0 3.8rem;
+        letter-spacing: 0.2rem;
+        .logo {
+            @include display;
+            height: 12.4rem;
+        } 
+        .next {
+            padding: 2.6rem 0 1.25rem 0;
+            font-size: 1.3rem;
+            color: $white;
+            white-space: nowrap;
+        }
+    }
+    .down {
+        padding: 0.7rem 3.8rem 1.7rem 3.8rem;
+        border-bottom: 0.1rem solid #dddddd;
+        .black {
+            @include display;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            margin-bottom: 0.9rem;
+        }
+    }
+}
+footer.name {
+    @include display;
+    justify-content: space-around;
+    @include fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color:rgba(153,223,240,0.8);
+    height: 6.5rem;
+    color: $white;
+    font-size: 2rem;
+    .red{
+        background-color: #f66f6f;
+    }
+    .orange{
+        background-color: #fbb435;
+    }
+}

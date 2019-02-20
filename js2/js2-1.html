@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="js2-1.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>首页</title>
+</head>
+<body>
+    <input type='checkbox' id='sidemenu'>
+    <aside>
+        <ul id="sideul">
+            <li>
+                <img class="name" src="css13-4.png"></img>
+                <a class="name font-blue" href="https://xyz0703.github.io/learngit/css13/css13-2.html">公告</a>
+                <div class="box"></div>
+            </li>
+            <li>
+                <img class="name" src="css13-3.png"></img>
+                <a class="name font-blue" href="https://xyz0703.github.io/learngit/css13/css13-2.html">设置</a>
+                <div class="box"></div>
+            </li>
+            <li>
+                <img class="name" src="css13-6.png"></img>
+                <a class="name font-blue" href="https://xyz0703.github.io/learngit/css13/css13-2.html">帮助</a>
+                <div class="box"></div>
+            </li>
+            <li>
+                <img class="name" src="css13-5.png"></img>
+                <a class="name font-blue" href="https://xyz0703.github.io/learngit/css13/css13-2.html">关于</a>
+                <div class="box"></div>
+            </li>
+        </ul>
+    </aside>
+    <div id='wrap'>      
+        <!--for 属性规定 label 与哪个表单元素绑定，即将这个控制侧边栏进出的按钮与checkbox绑定-->
+    <div class="padding">
+    <header class="name">
+            <label id='sideMenuControl' for='sidemenu'></label>
+    </header>
+    <main class="name">
+        <div class="start">
+            <span>上次游戏：捉鬼猜词版</span>
+            <div class="right"></div>
+        </div>
+        <div class="end">
+            <div class="top">
+                <span>捉鬼游戏</span>
+            </div>
+            <div class="bottom">
+                <div class="on" id="btn1">
+                    <a class="name">简化版</a>
+                </div>
+                <div class="down">
+                    <span>有1133个用户正在玩此款游戏</span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="on">
+                   <button class="name">
+                        <a class="name" href="https://xyz0703.github.io/learngit/css13/css13-2.html">猜词版</a>
+                    </button>
+                </div>
+                <div class="down">
+                    <span>有1133个用户正在玩此款游戏</span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="on">
+                    <button class="name">
+                        <a class="name" href="https://xyz0703.github.io/learngit/css13/css13-2.html">白痴版</a>
+                    </button>
+                </div>
+                <div class="down">
+                    <span>有1133个用户正在玩此款游戏</span>
+                </div>
+                <div class="round">
+                    <button class="name blue"></button>
+                    <button class="name gray"></button>
+                    <button class="name gray"></button>
+                    <button class="name gray"></button>
+                </div>
+            </div> 
+            <button class="name triangle"></button>   
+        </div>  
+    </main>
+    </div>
+    </div>
+    <script src="js2-1.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="js2-2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>玩家配比</title>
+</head>
+<body>
+    <header class="name">
+        <button onclick="jump()" id="jumpto">
+            <div class="menu"></div>
+        </button>
+    </header>
+    <main class="name">
+        <div class="last">
+            <span>玩家匹配</span>
+        </div>
+        <div class="top">
+            <div class="centent">
+                <div class="photo left"></div>
+                <p>杀手<span id='d1'>2</span>人</p>
+            </div>
+            <div class="centent">
+                <div class="photo right"></div>
+                <p>平民<span id='d2'>6</span>人</p>
+            </div>
+        </div>
+        <div class="center">
+            <button class="img-left" id="btnone"></button>
+            <input type="range" id="d3" min="4" max="18" value="8">
+            <button class="img-right" id="btntwo"></button>
+        </div>
+        <div class="bottom">
+            <strong>请输入玩家数量</strong>
+            <input class="name" type="text" id="d0" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" value="8" >
+            <span class="font-orange">玩家数量为4-18</span>
+        </div>  
+        <button class="deal" id="btnthree">
+            <span>去发牌</span>
+        </button>
+    </main>
+    <script src="js2-2.js"></script>
+</body>
+</html>

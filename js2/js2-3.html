@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="js2-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>查看身份</title>
+</head>
+<body >
+    <header class="name">
+        <button id="btn1">
+            <div class="menu"></div>
+        </button>
+        <span id="diary">查看身份</span>
+        <button id="btn2">
+            <div class="close"></div>
+        </button>
+    </header>
+    <main class="name" id="main">
+        <div class="centent">
+            <div id="identity">
+                <div class="emperor"></div>
+            </div>
+            <div class="round">
+                <span id="num1">1</span>
+            </div>
+        </div>
+        <div class="none">
+            <div id="emperor">
+                <div class="emperor"></div>
+            </div>
+            <div id="killer">
+                <div class="player">
+                    <div class="photo"></div>
+                    <p>杀手</p>
+               </div>
+            </div>
+            <div id="civilian">
+                <div class="player">
+                    <div class="photo"></div>
+                    <p>平民</p>
+                </div>
+            </div>
+            <div id="baddie">
+                <div class="judge">
+                    <div class="role">
+                        <p id="kill">杀手</p>
+                    </div>
+                    <div class="num">
+                        <p><span id="num3"></span>号</p>
+                    </div>
+                </div>
+            </div>
+            <div id="goody">
+                <div class="judge">
+                    <div class="role">
+                        <p id="people">平民</p>
+                    </div>
+                    <div class="num">
+                        <p><span id="num4"></span>号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="name">
+        <button class="consult" id="btn3" onclick="mybtn3()">
+            <p>查看<span id="num2">1</span>号身份</p>
+        </button>  
+    </footer>
+    <script src="js2-3.js"></script>
+</body>
+</html>
