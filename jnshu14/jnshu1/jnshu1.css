@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/*需要另外的样式来引用它*/
+html {
+  font-size: 62.5%;
+  background: #fafafa;
+}
+
+main {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+main .carousel {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+main .carousel .banner {
+  padding: 0;
+  width: 300vw;
+  white-space: nowrap;
+  animation: loop 10s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 0);
+  }
+  35% {
+    transform: translate(calc(300vw / -3), 0);
+  }
+  60% {
+    transform: translate(calc(300vw / -3), 0);
+  }
+  65% {
+    transform: translate(calc(300vw / -1.5), 0);
+  }
+  95% {
+    transform: translate(calc(300vw / -1.5), 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+  /* 复位到第一张图片 */
+}
+
+main .carousel .banner ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+main .carousel .banner ul img {
+  position: relative;
+  left: 0;
+  width: 100vw;
+}
+
+main .connection {
+  margin-top: 8rem;
+}
+
+main .connection .connect {
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+main .connection .connect img {
+  height: 5rem;
+}
+
+main .connection .connect p {
+  color: #afafaf;
+}
+
+main .connection .connect-number {
+  margin-top: 2rem;
+}
+
+main .connection .connect-number .connect-content {
+  margin-left: 3rem;
+  padding-left: 3rem;
+  word-wrap: break-word;
+  text-align: left;
+  border-left: 2px dashed #dedede;
+}
+
+@media screen and (max-width: 768px) {
+  main .connection .connect-number .connect-content {
+    border: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+main .connection .connect-number .connect-content p {
+  color: #afafaf;
+}
+
+main .connection .connect-number .connect-content span {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #29b078;
+  line-height: 0.8rem;
+  font-weight: 700;
+}
+
+main .study {
+  margin-top: 5rem;
+}
+
+main .study .step {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+  padding: 0;
+  color: #999999;
+}
+
+main .study .step span {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.9vmax;
+  color: #29b078;
+  line-height: 3vw;
+  font-weight: 400;
+  box-shadow: #e4e4e4 0px 0px 10px;
+}
+
+main .study .step p {
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+main .study .step img {
+  zoom: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  main .study .step .hidden-arrow {
+    display: none;
+  }
+}
+
+main .student {
+  margin-top: 5rem;
+}
+
+main .student .stu {
+  min-height: 25vw;
+  padding: 1rem 1.8rem;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: #e4e4e4 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .student .stu img {
+  zoom: 0.7;
+}
+
+main .student .stu p {
+  color: #afafaf;
+  text-align: left;
+  max-width: 13vw;
+}
+
+@media screen and (max-width: 992px) {
+  main .student .stu p {
+    max-width: 80%;
+  }
+}
+
+main .student .round {
+  height: 2rem;
+}
+
+main .student .round span {
+  margin: 1px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: #e4e4e4 0px 0px 10px;
+}
+
+main .student .round span:nth-child(1) {
+  background: #29b078;
+}
+
+main .co-companies {
+  margin-top: 5rem;
+}
+
+main .co-companies h4 {
+  margin-bottom: 5rem;
+}
+
+main .co-companies .companies {
+  box-shadow: #e4e4e4 0px 0px 10px;
+}
+
+@media screen and (max-width: 576px) {
+  main .co-companies .companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+  }
+}
+
+main .co-companies .companies .company {
+  width: 20%;
+  height: 14vw;
+  background-color: #ffffff;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  main .co-companies .companies .company {
+    border-right: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    width: 90%;
+    height: 45vw;
+    background-color: #ffffff;
+    border-radius: 0;
+  }
+  main .co-companies .companies .company:nth-child(1) {
+    border-top: 1px solid #e4e4e4;
+  }
+  main .co-companies .companies .company:nth-child(5) {
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+
+main .co-companies .companies .company:hover {
+  box-shadow: #e4e4e4 0px 0px 10px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  main .co-companies .companies .company .company-img {
+    width: 100%;
+    height: 40vw;
+    background-color: #ffffff;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+main .co-companies .companies .company .company-img img {
+  width: 100%;
+  overflow: hidden;
+}
+
+main .links {
+  background: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+main .links li {
+  font-weight: 700;
+  color: #999999;
+  padding-bottom: 3px;
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  main .links li {
+    margin-right: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .links li {
+    margin-left: 30%;
+    margin-right: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .links li {
+    margin-right: 0;
+  }
+}
+
+main .links li:hover, main .links li :active {
+  margin-bottom: -1.2px;
+  border-bottom: 1.2px solid #29b078;
+}
+
+main .links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #999999;
+}
+
+main .links li a:hover, main .links li a :active {
+  border: none;
+}

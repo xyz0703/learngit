@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*需要另外的样式来引用它*/
+html {
+  font-size: 62.5%;
+  background: #fafafa;
+}
+
+button {
+  padding: 0;
+  margin: 1px 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+main {
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+}
+
+main .banner img {
+  width: 100vw;
+}
+
+main .main .main-title {
+  margin-top: 1rem;
+  padding: 1.7rem;
+}
+
+main .main .main-title a {
+  text-decoration: none;
+}
+
+main .main .main-title a:hover, main .main .main-title a :active, main .main .main-title a :focus {
+  color: #29b078;
+}
+
+main .main .main-title button {
+  color: #29b078;
+  background: #fafafa;
+}
+
+main .nav {
+  background: #ffffff;
+  padding-bottom: 1rem;
+  box-shadow: #e4e4e4 0px 0px 10px;
+}
+
+main .nav h4 {
+  text-align: center;
+  padding: 13px;
+  margin: 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .nav ul {
+  padding: 0;
+  text-align: center;
+}
+
+main .nav ul li {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  list-style: none;
+  color: #29b078;
+}
+
+main .nav ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #ff650e;
+}
+
+main .nav ul li:hover, main .nav ul li :active {
+  color: #ff650e;
+}
+
+main .nav ul li:hover::before, main .nav ul li :active::before {
+  background-color: #f9a372;
+}
+
+main .nav ul li button {
+  background: #ffffff;
+}
+
+main .nav ul li input {
+  display: none;
+}
+
+main .content {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #999999;
+  line-height: 2rem;
+  font-weight: 400;
+  background: #ffffff;
+  padding-bottom: 9rem;
+  box-shadow: #e4e4e4 0px 0px 10px;
+}
+
+main .content .content-title {
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .content .content-title img {
+  margin-left: 3rem;
+  padding: 3rem;
+}
+
+main .content .content-title p {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 567px) {
+  main .content .content-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-indent: 2em;
+    padding: 3rem;
+  }
+  main .content .content-title img {
+    margin-left: 3rem;
+    padding: 1rem;
+  }
+  main .content .content-title p {
+    padding: 1rem;
+  }
+}
+
+main .content .article {
+  padding-top: 2rem;
+  text-indent: 2em;
+}

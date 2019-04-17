@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*需要另外的样式来引用它*/
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+button {
+  padding: 0;
+  margin: 1px 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+main {
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+  font-size: 1.2rem;
+}
+
+main .main-title {
+  padding-bottom: 1.7rem;
+  border-bottom: 1px solid #d0d6d9;
+}
+
+main .main-title a {
+  text-decoration: none;
+}
+
+main .main-title a:hover, main .main-title a :active, main .main-title a :focus {
+  color: #29b078;
+}
+
+main .main-title button {
+  color: #29b078;
+  background: #fafafa;
+}
+
+main .main-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #edf1f2;
+}
+
+main .main-nav span {
+  color: #999999;
+}
+
+main .main-nav button {
+  padding: 2px;
+}
+
+main .main-nav button:hover, main .main-nav button :active, main .main-nav button :focus {
+  background: #29b078;
+  color: #ffffff;
+}
+
+main .main-nav .button {
+  background: #29b078;
+  color: #ffffff;
+}
+
+main .main-box h4 {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid #d0d6d9;
+}
+
+main .main-box .box {
+  position: relative;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: #e4e4e4 0px 0px 10px;
+  margin-top: 1.5rem;
+}
+
+main .main-box .box .box-title {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .main-box .box .box-title img {
+  zoom: 0.7;
+}
+
+main .main-box .box .box-title .box-right {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+main .main-box .box .box-title .box-right h4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+main .main-box .box .box-title .box-right span {
+  word-wrap: break-word;
+  padding-top: 10px;
+}
+
+main .main-box .box .tb1, main .main-box .box .tb2, main .main-box .box .tb4 {
+  width: 100%;
+  margin: 0;
+  font-size: 0.6rem;
+  color: #999999;
+}
+
+main .main-box .box .tb1 td, main .main-box .box .tb2 td, main .main-box .box .tb4 td {
+  padding: 1rem 1rem;
+  border: 1px solid #edf1f2;
+}
+
+main .main-box .box .tb1 .td1, main .main-box .box .tb2 .td1, main .main-box .box .tb4 .td1 {
+  width: 50%;
+}
+
+main .main-box .box .tb1 .td1 span, main .main-box .box .tb2 .td1 span, main .main-box .box .tb4 .td1 span {
+  color: black;
+}
+
+main .main-box .box .tb1 .td1 img, main .main-box .box .tb2 .td1 img, main .main-box .box .tb4 .td1 img {
+  margin-left: 1rem;
+  zoom: 0.7;
+}
+
+main .main-box .box .tb1 .td1 .table-number, main .main-box .box .tb2 .td1 .table-number, main .main-box .box .tb4 .td1 .table-number {
+  color: red;
+  margin-left: 1rem;
+}
+
+main .main-box .box .tb2 .td2 .td-right {
+  float: right;
+}
+
+main .main-box .box .tb3 {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  border: 1px solid #edf1f2;
+}
+
+main .main-box .box .tb3 h4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+main .main-box .box .tb3 .td3 {
+  padding: 1rem 1rem;
+}
+
+main .main-box .box .tb3 .td3 .table-number {
+  color: red;
+  font-weight: 700;
+}
+
+main .main-box .box .hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding-top: 3vmax;
+  font-size: 1.4rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: rgba(61, 61, 61, 0.8);
+  z-index: 10;
+}
+
+main .main-box .box .hover .hover-title {
+  text-align: center;
+}
+
+main .main-box .box .hover .hover-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .main-box .box:hover .hover {
+  display: block;
+  animation: sport;
+}
+
+@keyframes sport {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

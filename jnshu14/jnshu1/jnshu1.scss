@@ -1,0 +1,276 @@
+
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+} 
+@mixin flex-c($justify,$align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;
+}
+@mixin position($position,$side,$sidevalue) {
+  position: $position;
+  #{$side}: $sidevalue;
+}
+@mixin font($fz,$cl,$lh,$fw){
+  font-size: $fz;
+  color: $cl;
+  line-height: $lh;
+  font-weight: $fw;
+}
+@mixin box($width,$height,$bg,$radius){
+  width: $width;
+  height: $height;
+  background-color: $bg;
+  border-radius: $radius; 
+}
+@mixin rounded($property,$val){
+  #{$property}:$val;
+  -moz-#{$property}:$val;
+  -webkit-#{$property}:$val;
+  -o-#{$property}:$val;
+  -ms-#{$property}:$val;
+  }
+  /*需要另外的样式来引用它*/
+  // .A{
+  //   @include rounded(border-radius,30px);
+  // }
+$border: 1px solid;
+$box-shadow: #e4e4e4 0px 0px 10px;
+    // box-shadow: #999999 0px 0px 10px;
+
+
+html{
+  font-size: 62.5%;
+  background: #fafafa;
+}
+
+  main{
+    font-size: 1.4rem;
+    text-align: center;
+    .carousel{
+      position: relative;
+      width: 100vw;
+      overflow: hidden;
+      .banner{
+        padding: 0;
+        width: 300vw;
+        white-space: nowrap;
+        animation: loop 10s linear infinite;
+        @keyframes loop {
+          0% {
+              transform: translate(0, 0);
+          }
+          30% {
+              transform: translate(0, 0);
+          }
+          35% {
+              transform: translate(calc(300vw / -3), 0);
+          }
+          60% {
+              transform: translate(calc(300vw / -3), 0);
+          }
+          65% {
+              transform: translate(calc(300vw / -1.5), 0);
+          }
+          95% {
+              transform: translate(calc(300vw / -1.5), 0);
+          }
+          100% {
+              transform: translate(0, 0);
+          }
+          /* 复位到第一张图片 */
+        }
+        ul{
+          margin: 0;
+          padding: 0;
+          font-size: 0;
+          @include flex(start,start );
+            img{
+              @include position(relative,left ,0 );
+              width: 100vw;
+            }
+        }
+      }
+    }
+    .connection{
+      margin-top: 8rem;
+      .connect{
+        padding: 20px;
+        word-wrap:break-word ;
+        img{
+          height: 5rem;
+        }
+        p{
+          color: #afafaf;
+        }
+      }
+      .connect-number{
+        margin-top: 2rem;
+        .connect-content{
+          margin-left: 3rem;
+          padding-left: 3rem;
+          word-wrap:break-word;
+          text-align: left;
+          border-left: 2px dashed #dedede;
+          @media screen and (max-width: 768px){
+            border: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          }
+          p{
+            color: #afafaf;
+          }
+          span{
+            display: inline-block;
+            @include font(1.3rem,#29b078 , 0.8rem,700);
+          }
+        }
+      }
+    }
+    .study{
+      margin-top: 5rem;
+      .step{
+        @include flex(space-evenly,center);
+        height: 10rem;
+        padding: 0;
+        color: #999999;
+        span{
+          display: inline-block;
+          @include box(3vw,3vw,#ffffff,50%);
+          @include font(0.9vmax,#29b078,3vw,400);
+          box-shadow: $box-shadow;
+        }
+        p{
+          width: 60%;
+          font-size: 1.2rem;
+        }
+        img{
+          zoom: 0.5;
+        }
+        .hidden-arrow{
+          @media screen and (min-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .student{
+      margin-top: 5rem;
+      .stu{
+        min-height: 25vw;
+        padding: 1rem 1.8rem;
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        @include flex-c(center, center);
+        img{
+          zoom: 0.7;
+        }
+        p{
+          color: #afafaf;
+          text-align: left;
+          max-width: 13vw;
+          @media screen and (max-width: 992px) {
+            max-width: 80%;
+          }
+        }
+      }
+      .round{
+        height: 2rem;
+        span{
+          margin: 1px;
+          display: inline-block;
+          @include box(8px,8px,#ffffff,50%);
+          box-shadow: $box-shadow;
+          &:nth-child(1){
+            background: #29b078;
+          }
+        }
+      }
+    }
+    .co-companies{
+      margin-top: 5rem;
+      h4{
+        margin-bottom: 5rem;
+      }
+      .companies{
+        box-shadow: $box-shadow;
+        @media screen and (max-width: 576px) {
+          @include flex-c(center,center);
+          box-shadow: none;
+        }
+        .company{
+          @include box(20%,14vw,#ffffff,0);
+          @include flex(center,center);
+          @media screen and (max-width: 576px) {
+            border-right: $border #e4e4e4;
+            border-left: $border #e4e4e4;
+            @include box(90%,45vw,#ffffff,0);
+            &:nth-child(1){
+              border-top: $border #e4e4e4;
+            }
+            &:nth-child(5){
+              border-bottom: $border #e4e4e4;
+            }
+          }
+          &:hover{
+            box-shadow: $box-shadow;
+            z-index: 2;
+          }
+          .company-img{
+            @media screen and (max-width: 576px) {
+              @include box(100%,40vw,#ffffff,0);
+              @include flex(center,center);
+            }
+            img{
+              width: 100%;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+    .links{
+      background: #ffffff;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      margin-top: 5rem;
+      li{
+        font-weight: 700;
+        color: #999999;
+        padding-bottom: 3px;
+        text-align: left;
+        @media screen and (max-width: 992px) {
+          margin-right: 35%;
+        }
+        @media screen and (max-width: 768px) {
+          margin-left: 30%;
+          margin-right: 40%;
+        }
+        @media screen and (max-width: 576px) {
+          margin-right: 0;
+        }
+        &:hover,:active{
+          margin-bottom: -1.2px;
+          border-bottom:1.2px solid #29b078;
+        }
+        a{
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: #999999;
+          &:hover,:active{
+            border:none;
+          }
+        }
+      }
+    }
+  }

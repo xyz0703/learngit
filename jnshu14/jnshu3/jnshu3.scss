@@ -1,0 +1,164 @@
+
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+} 
+@mixin flex-c($justify,$align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;
+}
+@mixin position($position,$side,$sidevalue) {
+  position: $position;
+  #{$side}: $sidevalue;
+}
+@mixin font($fz,$cl,$lh,$fw){
+  font-size: $fz;
+  color: $cl;
+  line-height: $lh;
+  font-weight: $fw;
+}
+@mixin box($width,$height,$bg,$radius){
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-color: $bg;
+  border-radius: $radius; 
+}
+@mixin rounded($property,$val){
+  #{$property}:$val;
+  -moz-#{$property}:$val;
+  -webkit-#{$property}:$val;
+  -o-#{$property}:$val;
+  -ms-#{$property}:$val;
+  }
+  /*需要另外的样式来引用它*/
+  // .A{
+  //   @include rounded(border-radius,30px);
+  // }
+$border: 1px solid;
+$box-shadow: #e4e4e4 0px 0px 10px;
+    // box-shadow: #999999 0px 0px 10px;
+
+
+html{
+  font-size: 62.5%;
+  background: #fafafa;
+}
+
+
+
+button{
+  padding: 0;
+  margin: 1px 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+main{
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+  .banner{
+    img{
+      width: 100vw;
+    }
+  }
+  .main{
+    .main-title{
+      margin-top: 1rem;
+      padding: 1.7rem;
+      a{
+        text-decoration: none;
+        &:hover,:active,:focus{
+          color: #29b078;
+        }
+      }
+      button{
+        color: #29b078;
+        background: #fafafa;
+      }
+    }
+  }
+  .nav{
+    background: #ffffff;
+    padding-bottom: 1rem;
+    box-shadow: $box-shadow;
+    h4{
+      text-align: center;
+      padding: 13px;
+      margin: 0;
+      border-bottom: $border #e6e6e6;
+    }
+    ul{
+      padding: 0;
+      text-align: center;
+      li{
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        list-style: none;
+        color: #29b078;
+        &::before{
+          content: "";
+          @include box(6px,6px,#ffffff,50%);
+          border: $border #ff650e;
+        }
+        &:hover,:active{
+          color: #ff650e;
+          &::before{
+            background-color: #f9a372;
+          }
+        }
+        button{
+          background: #ffffff;
+        }
+        input{
+          display: none;
+        }
+      }
+    }
+  }
+  .content{
+    letter-spacing: 1px;
+    @include font(1.3rem,#999999,2rem,400);
+    background: #ffffff;
+    padding-bottom: 9rem;
+    box-shadow: $box-shadow;
+    .content-title{
+      border-bottom: $border #e4e4e4;
+      @include flex(space-between,center);
+      img{
+        margin-left: 3rem;
+        padding: 3rem;
+      }
+      p{
+        padding: 3rem;
+      }
+      @media screen and (max-width:567px) {
+        @include flex-c(space-between,center);
+        text-indent:2em;
+        padding: 3rem;
+        img{
+          margin-left: 3rem;
+          padding: 1rem;
+        }
+        p{
+          padding: 1rem;
+        }
+      }
+    }
+    .article{
+      padding-top: 2rem;
+      text-indent:2em;
+    }
+  }
+}

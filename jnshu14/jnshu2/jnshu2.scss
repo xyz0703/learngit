@@ -1,0 +1,217 @@
+
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+} 
+@mixin flex-c($justify,$align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;
+}
+@mixin position($position,$side,$sidevalue) {
+  position: $position;
+  #{$side}: $sidevalue;
+}
+@mixin font($fz,$cl,$lh,$fw){
+  font-size: $fz;
+  color: $cl;
+  line-height: $lh;
+  font-weight: $fw;
+}
+@mixin box($width,$height,$bg,$radius){
+  width: $width;
+  height: $height;
+  background-color: $bg;
+  border-radius: $radius; 
+}
+@mixin rounded($property,$val){
+  #{$property}:$val;
+  -moz-#{$property}:$val;
+  -webkit-#{$property}:$val;
+  -o-#{$property}:$val;
+  -ms-#{$property}:$val;
+  }
+  /*需要另外的样式来引用它*/
+  // .A{
+  //   @include rounded(border-radius,30px);
+  // }
+$border: 1px solid;
+$box-shadow: #e4e4e4 0px 0px 10px;
+    // box-shadow: #999999 0px 0px 10px;
+
+
+html{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+button{
+  padding: 0;
+  margin: 1px 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+main{
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+  font-size: 1.2rem;
+  .main-title{
+    padding-bottom: 1.7rem;
+    border-bottom: $border #d0d6d9;
+    a{
+      text-decoration: none;
+      &:hover,:active,:focus{
+        color: #29b078;
+      }
+    }
+    button{
+      color: #29b078;
+      background: #fafafa;
+    }
+  }
+  .main-nav{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: $border #edf1f2;
+    span{
+      color: #999999;
+    }
+    button{
+      padding: 2px;
+      &:hover,:active,:focus{
+        background: #29b078;
+        color: #ffffff;
+      }
+    }
+    .button{
+      background: #29b078;
+      color: #ffffff;
+    }
+  }
+  .main-box{
+    h4{
+      margin: 0;
+      padding: 1rem;
+      border-bottom: $border #d0d6d9;
+    }
+    .box{
+      position: relative;
+      border-radius: 4px;
+      background: #ffffff;
+      box-shadow: $box-shadow;
+      margin-top: 1.5rem;
+      .box-title{
+        padding: 15px 10px;
+        @include flex(space-around,center);
+        img{
+          zoom: 0.7;
+        }
+        .box-right{
+          padding-left: 0.5rem;
+          @include flex-c(space-evenly,start);
+          h4{
+            margin: 0;
+            padding: 0;
+            border: none;
+          }
+          span{
+            word-wrap: break-word;
+            padding-top: 10px;
+          }
+        }
+      }
+      .tb1{
+        width: 100%;
+        margin: 0;
+        font-size: 0.6rem;
+        color: #999999;
+        td{
+          padding: 1rem 1rem;
+          border: $border #edf1f2;
+        }
+        .td1{
+          width: 50%;
+          span{
+            color: black;
+          }
+          img{
+            margin-left: 1rem;
+            zoom: 0.7;
+          }
+          .table-number{
+            color: red;
+            margin-left: 1rem;
+          }
+        }
+      }
+      .tb2{
+        @extend .tb1;
+        .td2{
+          .td-right{
+            float: right;
+          }
+        }
+      }
+      .tb3{
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        border: $border #edf1f2;
+        h4{
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+        .td3{
+          padding: 1rem 1rem;
+          .table-number{
+            color: red;
+            font-weight: 700;
+          }
+        }
+      }
+      .tb4{
+        @extend .tb1;
+      }
+      .hover{
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding-top: 3vmax;
+        font-size: 1.4rem;
+        color: #ffffff;
+        border-radius: 4px;
+        background-color: rgba(61, 61, 61, 0.8);
+        z-index: 10;
+        .hover-title{
+          text-align: center;
+        }
+        .hover-content{
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+      &:hover .hover{
+          display: block;
+          animation: sport;
+      }
+      @keyframes sport {
+          from  {transform: translateY(100%);opacity: 0;}
+          to {transform: translateY(0px);opacity: 1}
+      }
+    }
+  }
+}
